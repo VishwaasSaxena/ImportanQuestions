@@ -14,8 +14,9 @@ public class TwoStackImp {
             enQueue(item);
         
         }
-        System.out.println(s1.pop());
+        System.out.println();
         deQueue();
+        //if using switch case 
 
 
 
