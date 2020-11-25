@@ -1,3 +1,4 @@
+//yippe_kay-ye
 public class LinkedlistQueue {
     Node front;
     Node rear;
