@@ -1,5 +1,5 @@
 import java.util.Scanner;
-
+//shifting negative to one sides
 public class NegativeSide {
     public static void main(String Args[]){
         Scanner sc=new Scanner(System.in);
