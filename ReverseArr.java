@@ -1,4 +1,5 @@
 import java.util.*;
+//Reverse an array
 public class ReverseArr {
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
