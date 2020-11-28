@@ -10,6 +10,7 @@ public class KadaneA {
         for(int i=0;i<n;i++){
             a[i]=sc.nextInt();
         }
+      
         int result=maxSub(a, n);
         System.out.println("The max sum is ="+ result);
     }
