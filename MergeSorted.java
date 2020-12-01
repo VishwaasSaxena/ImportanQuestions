@@ -1,5 +1,5 @@
 import java.util.Scanner;
-
+//some minor changes made
 public class MergeSorted {
     public static void main(String[] args) {
         int n,m;
