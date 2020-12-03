@@ -6,7 +6,7 @@ public class MergeSorted {
         Scanner sc=new Scanner(System.in);
         n=sc.nextInt();
         m=sc.nextInt();
-        int a1[]=new int[n];
+        int a1[]=new int[n+m];
         int a2[]=new int[m];
         for(int i=0;i<n;i++){
             a1[i]=sc.nextInt();
@@ -37,7 +37,10 @@ public class MergeSorted {
             k++;
             j++;
         }
-        for(int item: merged){
+        for(int c=0;c<merged.length;c++){
+            a1[c]=merged[c];
+        }
+        for(int item: a1){
             System.out.print(item+" ");
         }
         
