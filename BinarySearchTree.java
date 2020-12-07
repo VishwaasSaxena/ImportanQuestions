@@ -40,7 +40,7 @@ public class BinarySearchTree {
     public void inOrderT(Node root){
         if(root!=null){
             inOrderT(root.left);
-            System.out.println(root.data);
+            System.out.print(root.data+" ");
             inOrderT(root.right);
         }
     }
@@ -51,8 +51,29 @@ public class BinarySearchTree {
         if(root!=null){
             postOrderT(root.left);
             postOrderT(root.right);
-            System.out.println(root.data);
+            System.out.print(root.data+" ");
         }
+    }
+    public void findMax(){
+        System.out.println(getMax(root));
+    }
+    public int getMax(Node root){
+        int rVal=0,max=0,rMax,lMax;
+        if(root!=null){
+            rVal=root.data;
+            lMax=getMax(root.left);
+            rMax=getMax(root.right);
+            if(lMax>rMax){
+                max=lMax;
+            }else{
+                max=rMax;
+            }
+            if(rVal>max){
+                max=rVal;
+            }
+
+        }
+        return max;
     }
     public static void main(String[] args) {
         BinarySearchTree tree= new BinarySearchTree();
@@ -66,6 +87,8 @@ public class BinarySearchTree {
         tree.inOrder();
         System.out.println("-----------------");
         tree.postOrder();
+        System.out.println();
+        tree.findMax();
     }
     
 }

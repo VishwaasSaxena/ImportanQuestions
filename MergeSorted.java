@@ -41,6 +41,7 @@ public class MergeSorted {
             a1[c]=merged[c];
         }
         for(int item: a1){
+            
             System.out.print(item+" ");
         }
         
