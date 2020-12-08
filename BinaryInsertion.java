@@ -63,6 +63,19 @@ public class BinaryInsertion {
         return max;
 
     }
+    static int getHeight(Node root){
+        if(root==null){
+            return -1;
+        }else{
+            int lH=getHeight(root.left);
+            int rH=getHeight(root.right);
+            if(lH>rH){
+                return lH+1;
+            }else{
+                return rH+1;
+            }
+        }
+    }
     public static void main(String[] args) {
 
         root=new Node(10);
@@ -77,6 +90,7 @@ public class BinaryInsertion {
         inOrder(root);
         System.out.println();
         System.out.println(maxValue(root));
+        System.out.println(getHeight(root));
 
     }
 
