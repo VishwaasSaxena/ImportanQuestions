@@ -14,7 +14,7 @@ public class SearchPattern {
                 if(str.charAt(i+j)!=pattern.charAt(j))
                 break;
                 if(j==n-1){
-                    System.out.println("Pattern found at index "+i);
+                    System.out.println("Pattern found at index n"+i);
                 }
             }
         }
