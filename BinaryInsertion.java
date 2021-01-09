@@ -76,6 +76,13 @@ public class BinaryInsertion {
             }
         }
     }
+    static int getSum(Node root){
+        if(root==null){
+            return 0;
+        }
+        int sum=0;
+        return (root.data+getSum(root.left)+getSum(root.right));
+    }
     public static void main(String[] args) {
 
         root=new Node(10);
