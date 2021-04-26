@@ -15,8 +15,8 @@ public class RotateArray {
         
         for(int j=1;j<=2;j++){
         int temp=arr[0];
-        for(int i=1;i<n;i++){
-            arr[i-1]=arr[i];
+        for(int i=1;i<n-1;i++){
+            arr[i+1]=arr[i];
         }
         arr[n-1]=temp;
     }

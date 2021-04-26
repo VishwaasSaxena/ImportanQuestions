@@ -83,6 +83,15 @@ public class BinaryInsertion {
         int sum=0;
         return (root.data+getSum(root.left)+getSum(root.right));
     }
+    static boolean getN(Node root, int x){
+        if(root==null){
+            return false;
+        }
+        if(root.data==x){
+            return true;
+        }
+        return (getN(root.left,x) || getN(root.right, x));
+    }
     public static void main(String[] args) {
 
         root=new Node(10);
@@ -95,9 +104,11 @@ public class BinaryInsertion {
         insert(root, 12);
         System.out.println();
         inOrder(root);
+        insert(root, 28);
         System.out.println();
         System.out.println(maxValue(root));
         System.out.println(getHeight(root));
+        System.out.println(getN(root,28));
 
     }
 
