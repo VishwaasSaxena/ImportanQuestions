@@ -14,9 +14,9 @@ public class RotateArray {
         //int temp=arr[n];
         
         for(int j=1;j<=2;j++){
-        int temp=arr[0];
-        for(int i=1;i<n-1;i++){
-            arr[i+1]=arr[i];
+        int temp=arr[n-1];
+        for(int i=n-1;i>=0;i--){
+            arr[i]=arr[i-1];
         }
         arr[n-1]=temp;
     }
